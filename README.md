@@ -2,7 +2,7 @@
 Martin HEIN (m#)  
 `r format(Sys.Date(), "%d %B %Y")`  
 # INTRODUCTION
-This repository has been created to accommodate the project for the assignment of the [Coursers][coursera] class _[Developing Data Products][ddp]_, part of the _[Data Science Specialisation][dss]_.
+This repository has been created to accommodate the project for the assignment of the [Coursera][coursera] class _[Developing Data Products][ddp]_, part of the _[Data Science Specialisation][dss]_.
 
 # FILES
 The project comprises of the following files.
