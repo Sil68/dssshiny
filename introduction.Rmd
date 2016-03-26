@@ -1,0 +1,54 @@
+---
+title: "Introduction"
+author: "Martin HEIN (m#)"
+date: '`r format(Sys.Date(), "%d %B %Y")`'
+output:
+  html_document:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 7
+    highlight: zenburn
+    number_sections: yes
+    theme: journal
+    toc: yes
+  pdf_document:
+    fig_caption: yes
+    fig_height: 4
+    fig_width: 7
+    highlight: zenburn
+    number_sections: yes
+    toc: yes
+  word_document:
+    fig_caption: yes
+    fig_height: 4
+    fig_width: 7
+    highlight: zenburn
+    number_sections: yes
+    toc: yes
+---
+# Introduction
+By using this web-based application you--the user--will be enabled to **define some parameter** based upon which **data will get generated**, ie. simulation of observations, and a **linear regression model is created** based on these observations.
+
+Data generation follows 
+
+    y = b0 + b1 * x1 + b2 * x2 + e  
+
+with _**x2**_ being related to _**x1**_ in one of the following ways
+
+    * x2 = log(abs(x1)+1);  
+    * x2 = x1^2 ;  
+    * x2 = 1/x1.  
+
+# How to get started
+
+1. Please select menu item _**parameter**_;
+2. Set parameters for simulated data as required;
+3. Click on button _**Start**_;
+4. Menu item _**overview**_ will display the formula & the parameter set to generate the simulated observations, as well as the coefficients of the linear regression model built;
+4. Menu item _**data**_ will display the data generated/observations simulated;
+5. Menu item _**summary**_ will display a brief summary of the data generated, along with an overview of the linear regression model created;
+6. Menu item _**plot**_ will display various plots based upon the data and the model;
+7. Menu item _**help**_ contains some help on how to use this application;
+8. Mene item _**rationale**_ will display the rationale underlying this application.
+
+**Have fun!** or in other words: **Let the games begin!**

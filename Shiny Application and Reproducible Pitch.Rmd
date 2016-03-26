@@ -1,0 +1,114 @@
+---
+title: "Shiny Application and Reproducible Pitch"
+author: "Martin HEIN (m#)"
+date: '`r format(Sys.Date(), "%d %B %Y")`'
+output:
+  html_document:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 7
+    highlight: zenburn
+    number_sections: yes
+    theme: journal
+    toc: yes
+  pdf_document:
+    fig_caption: yes
+    fig_height: 4
+    fig_width: 7
+    highlight: zenburn
+    number_sections: yes
+    toc: yes
+  word_document:
+    fig_caption: yes
+    fig_height: 4
+    fig_width: 7
+    highlight: zenburn
+    number_sections: yes
+    toc: yes
+---
+<style type="text/css">
+    h1 {
+        font-size: 18pt;
+    }
+    h2 {
+        font-size: 16pt;
+    }
+    h3 {
+        font-size: 14pt;
+    }
+    h4 {
+        font-size: 12pt;
+    }
+    body {
+        font-size: 10pt;
+    }
+    td {
+        font-size: 9.5pt;
+    }
+    code.r {
+        font-size: 8pt;
+    }
+    pre {
+        font-size: 9pt;
+    }
+</style>
+```{r options, echo=FALSE, warning=FALSE, results="hide"}
+## define global settings
+library(knitr)
+opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, results="show")
+pdf.options(useDingbats = TRUE)
+```
+*****
+# INSTRUCTIONS
+This peer assessed assignment has two parts. First, you will create a _**Shiny application**__ and deploy it on Rstudio's servers. Second, you will use [Slidify][slidify] or _**Rstudio Presenter**_ to prepare a reproducible pitch presentation about your application.
+
+## Your Shiny Application
+1. Write a **shiny application with associated supporting documentation**. The documentation should be thought of as whatever a user will need to get started using your application.
+2. Deploy the application on _**Rstudio's shiny server**_
+3. Share the application link by pasting it into the provided text box
+4. Share your _**```server.R```**_ and _**```ui.R```**_ code on [github][github]
+
+The application must include the following:
+
+1. Some form of input (widget: textbox, radio button, checkbox, ...)
+2. Some operation on the ui input in _**```sever.R```**_
+3. Some reactive output displayed as a result of server calculations
+4. You must also include enough documentation so that a novice user could use your application.
+5. The documentation should be at the Shiny website itself. Do not post to an external link.
+
+The Shiny application in question is entirely up to you. However, if you're having trouble coming up with ideas, you could start from the simple prediction algorithm done in class and build a new algorithm on one of the R datasets packages. Please make the package simple for the end user, so that they don't need a lot of your prerequisite knowledge to evaluate your application. You should emphasize a simple project given the short time frame.
+
+## Your Reproducible Pitch Presentation
+OK, you've made your shiny app, now it's time to make your pitch. You get 5 slides (inclusive of the title slide) to pitch a your app. You're going to create a web page using [Slidify][slidify] or _**Rstudio Presenter**_ with an html5 slide deck.
+
+Here's what you need
+
+1. 5 slides to pitch our idea done in [slidify][slidify] or Rstudio Presenter
+2. Your presentation pushed to github or [Rpubs][rpubs]
+3. A link to your [github][github] or [Rpubs][rpubs] presentation pasted into the provided text box
+
+Your presentation must satisfy the following
+
+1. It must be done in [Slidify][slidify] or Rstudio Presenter
+2. It must be 5 pages
+3. It must be hosted on [github][github] or [Rpubs][rpubs]
+4. It must contained some embedded R code that gets run when slidifying the document
+
+Notice to publish your [slidify][slidify] presentation to [github][github] or [Rpubs][rpubs], there's the publish command. This link outlines how to do it (it's one line).
+
+[http://slidify.org/publish.html][pubslidify]
+
+Rstudio presenter has a button to publish directly to [Rpubs][rpubs] ([https://support.rstudio.com/hc/en-us/articles/200714023-Displaying-and-Distributing-Presentations][pubrpubs]. If you are using [Rpubs][rpubs], put in the link to the presentation into the submission box as a http:// link not a https:// link.
+
+You can also publish using both formats to [github][github] manually using gh-pages, though your [github][github] branch must have a _**```.nojekyll```**_ fle and be on a branch names gh-pages. There's more on gh-pages here [https://pages.github.com/][githubpg] and there is a video lecture outlining how to do this.
+
+## Review criterialess
+Follow the instructions in the assignment.
+
+*****
+[github]: <https://www.github.com>
+[githubpg]: <https://pages.github.com>
+[slidify]: <http://slidify.org>
+[pubslidify]: <http://slidify.org/publish.html>
+[rpubs]: <https://rpubs.com>
+[pubrpubs]: <https://support.rstudio.com/hc/en-us/articles/200714023-Displaying-and-Distributing-Presentations>

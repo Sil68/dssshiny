@@ -1,0 +1,29 @@
+---
+title: "Help"
+author: "Martin HEIN (m#)"
+date: '`r format(Sys.Date(), "%d %B %Y")`'
+output:
+  html_document:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 7
+    highlight: zenburn
+    number_sections: yes
+    theme: journal
+    toc: yes
+  pdf_document:
+    fig_caption: yes
+    fig_height: 4
+    fig_width: 7
+    highlight: zenburn
+    number_sections: yes
+    toc: yes
+  word_document:
+    fig_caption: yes
+    fig_height: 4
+    fig_width: 7
+    highlight: zenburn
+    number_sections: yes
+    toc: yes
+---
+_**HELP**_

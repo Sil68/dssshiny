@@ -1,0 +1,45 @@
+Shiny Application and Reproducible Pitch
+========================================================
+id: slide000
+author: Martin HEIN (m#)
+date: `r format(Sys.Date(), "%d %B %Y")`
+autosize: true
+transition: rotate
+
+Executive Summary
+========================================================
+id: slide001
+transition: fade
+
+For more details on authoring R presentations please visit <https://support.rstudio.com/hc/en-us/articles/200486468>.
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+Slide With Code
+========================================================
+id: slide002
+transition: linear
+
+```{r}
+summary(cars)
+```
+
+Slide With Plot
+========================================================
+id: slide003
+transition: concave
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Thank You!
+========================================================
+id: slide004
+transition: zoom
+
+```{r, echo=FALSE}
+plot(cars)
+```
