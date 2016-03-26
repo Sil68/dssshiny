@@ -15,12 +15,13 @@ The project comprises of the following files.
 | _README.md_ | this file, formatted as markdown | |
 | _README.Rmd_ | this file, formatted as R markdown | |
 | _server.R_ | Shiny app server applicaton part | |
-| _Shiny Application and Reproducible Pitch.Rmd_ | project assignment, formated as R markdown, displayed by ui.R |  menu item _**rationale**_ |
+| _Shiny Application and Reproducible Pitch.Rmd_ | project assignment, formated as R markdown, displayed by ui.R | menu item _**rationale**_ |
+| _Shiny Application and Reproducible Pitch.Rpres_ | the "pitch" presentation | |
 | _Shiny Application and Reproducible Pitch.Rproj_ | RStudio project file | |
 | _ui.R_ | Shiny app client/user interface application part | |
 
 # USAGE
-Open _**hiny Application and Reproducible Pitch.Rproj**_ in _**RStudio**_, open & run either _**ui.R**_ or _**server.R**_, and follow the instructions displayed associated with menu item _**introduction**_.
+Open _**Shiny Application and Reproducible Pitch.Rproj**_ in _**RStudio**_, open & run either _**ui.R**_ or _**server.R**_, and follow the instructions displayed associated with menu item _**introduction**_.
 
 -----
 [coursera]: <https://www.coursera.org>
