@@ -45,7 +45,7 @@ The project comprises of the following files.
 | _ui.R_ | Shiny app client/user interface application part | |
 
 # USAGE
-Open _**hiny Application and Reproducible Pitch.Rproj**_ in _**RStudio**_, open & run either _**ui.R**_ or _**server.R**_, and follow the instructions displayed associated with menu item _**introduction**_.
+Open _**Shiny Application and Reproducible Pitch.Rproj**_ in _**RStudio**_, open & run either _**ui.R**_ or _**server.R**_, and follow the instructions displayed associated with menu item _**introduction**_.
 
 -----
 [coursera]: <https://www.coursera.org>
