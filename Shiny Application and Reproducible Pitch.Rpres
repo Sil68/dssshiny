@@ -6,40 +6,66 @@ date: `r format(Sys.Date(), "%d %B %Y")`
 autosize: true
 transition: rotate
 
-Executive Summary
+Introduction
 ========================================================
 id: slide001
 transition: fade
 
-For more details on authoring R presentations please visit <https://support.rstudio.com/hc/en-us/articles/200486468>.
+The linear regression model is one of the most commonly used in data analysis, the daily bread and butter of any statistiscian.
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+In many cases a particular response variable is influenced by various predictor variables, requiring an approach of a multivariable linear regression to be taken.
 
-Slide With Code
+For the purpose of investigating a multivariable linear regression with two predictors, where the second is depending on the first, a corresponding web-based application has been developed.
+
+Underlying regression model
 ========================================================
 id: slide002
 transition: linear
 
-```{r}
-summary(cars)
-```
+The underlying regression model is of the form
 
-Slide With Plot
+$$y = \beta_0 + \beta_1 * x_1 + \beta_2 * x_2 + \epsilon$$
+
+where $x_2$ is depending on $x_1$ in on of the following ways
+
+* $x_2 = log(abs(x_1) + 1)$;
+* $x_2 = x_1^2$;
+* $x_2 = \frac{1}{x_1}$.
+
+Data simulation
 ========================================================
 id: slide003
 transition: concave
 
-```{r, echo=FALSE}
-plot(cars)
+The application is generating data (observations) based on some parameters specified.
+
+| variable | rule |
+| ---: | :--- |
+| $x_1$ | $N(\mu_1, \sigma_1)$ |
+| $x_2$ | * $log(abs(x_1) + 1)$ |
+|  | * $x_1^2$ |
+|  | * $\frac{1}{x_1}$ |
+| $\epsilon$ | $N(0, \sigma_\epsilon)$ |
+
+***
+
+```{r datX1}
+x1 <- rnorm(10, mean=1.5, sd=0.3)
+x2 <- x1^2
+data.table(x1=x1, x2=x2)
 ```
 
-Thank You!
+Links
 ========================================================
 id: slide004
 transition: zoom
 
-```{r, echo=FALSE}
-plot(cars)
-```
+Please use the following links to access
+
+* this presentation published at [Rpubs][myrpubs];
+* the Shiny project sources refered herein at [github][mygithub]; -and-
+* the corresponding Shiny application at [shinyapp.io][myshiny].
+
+[mygithub]: <https://github.com/Sil68/dssshiny>
+[myrpubs]: <https://rpubs.com/Sil68/dssshiny>
+[myshiny]: <https://sil68-coursera.shinyapps.io/Shiny_Application_and_Reproducible_Pitch/>
