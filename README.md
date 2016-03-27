@@ -25,11 +25,14 @@ Open _**Shiny Application and Reproducible Pitch.Rproj**_ in _**RStudio**_, open
 
 # LINKS
 * Corresponding [github repository][mygithub] (this page);
-* Corresponding [Rpubs publication][myrpubs] (the published _pitch_ presentation).
+* Corresponding [Rpubs publication][myrpubs] (the published _pitch_ presentation);
+* Corresponding [Shiny application][myshiny] (the web-based Shiny application at [shinyapps.io][shinyapps]).
 
 -----
 [coursera]: <https://www.coursera.org>
 [ddp]: <https://www.coursera.org/learn/data-products/home/welcome>
 [dss]: <https://www.coursera.org/specializations/jhu-data-science>
+[shinyapps]: <http://www.shinyapps.io>
 [mygithub]: <https://github.com/Sil68/dssshiny>
 [myrpubs]: <https://rpubs.com/Sil68/dssshiny>
+[myshiny]: <https://sil68-coursera.shinyapps.io/Shiny_Application_and_Reproducible_Pitch/>
